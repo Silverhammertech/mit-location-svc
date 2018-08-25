@@ -1,0 +1,13 @@
+---
+applications:
+- name: mit-location-svc
+  host: mit-location-svc
+  memory: 32M
+  instances: 1
+  disk_quota: 32M
+  command: /app/bin/mit-location-svc
+  buildpack : https://github.com/cloudfoundry/go-buildpack.git
+  env:
+    MONGODB_CONNECTION_STRING: mongodb://admin:Passw0rd@ds159631.mlab.com:59631/silverhammer
+    MONGODB_DB: silverhammer
+    MONGODB_COLLECTION: mitlocation
