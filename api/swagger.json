@@ -124,7 +124,7 @@
         }
       }
     },
-    "/state/{state=code}": {
+    "/state/{state-code}": {
       "get": {
         "tags" : [ "geolocation" ],
         "summary": "Gets locations by state.",
