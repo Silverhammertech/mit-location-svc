@@ -10,6 +10,11 @@ var routes = ConfiguredRoutes{
 		Method:      "GET",
 		Pattern:     "/near",
 		HandlerFunc: HandleGetNear},
+	Route{
+		Name:        "GetByState",
+		Method:      "GET",
+		Pattern:     "/state/{state-code}",
+		HandlerFunc: HandleGetState},
 }
 
 type ConfiguredRoutes []Route

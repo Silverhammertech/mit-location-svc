@@ -124,6 +124,66 @@
         }
       }
     },
+    "/state/{state=code}": {
+      "get": {
+        "tags" : [ "geolocation" ],
+        "summary": "Gets locations by state.",
+        "description": "Gets locations by state.",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "state=code",
+            "in": "path",
+            "required": true,
+            "description": "State Code",
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "description": "Sort Parameter",
+            "type": "string",
+            "enum": [
+              "type","license_type","state","city","name"
+            ],
+            "default": "distance"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "description": "Sort Order",
+            "type": "string",
+            "enum": [
+              "asc", "desc"
+            ],
+            "default": "asc"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "description": "Sort Order",
+            "type": "number",
+            "default": 100
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "404": {
+            "description": "Endpoint Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
     "/ping": {
       "get": {
         "tags" : [ "diagnostic" ],
