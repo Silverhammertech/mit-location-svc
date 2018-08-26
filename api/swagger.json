@@ -134,7 +134,7 @@
         ],
         "parameters": [
           {
-            "name": "state=code",
+            "name": "state-code",
             "in": "path",
             "required": true,
             "description": "State Code",
