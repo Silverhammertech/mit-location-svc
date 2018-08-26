@@ -17,12 +17,13 @@ const (
 )
 
 type RequestGeo struct {
-	Longitude float64 `json:"longitude"`
-	Latitude  float64 `json:"latiude"`
-	SortParam string  `json:"sort"`
-	SortOrder string  `json:"order"`
-	Limit     int     `json:"limit"`
-	Radius    int     `json:"radius"`
+	Longitude float64 `json:"longitude,omitempty"`
+	Latitude  float64 `json:"latiude,omitempty"`
+	SortParam string  `json:"sort,omitempty"`
+	SortOrder string  `json:"order,omitempty"`
+	Limit     int     `json:"limit,omitempty"`
+	Radius    int     `json:"radius,omitempty"`
+	State     string  `json:"state,omitempty"`
 }
 
 type ResponseGeo struct {
