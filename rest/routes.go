@@ -15,6 +15,26 @@ var routes = ConfiguredRoutes{
 		Method:      "GET",
 		Pattern:     "/state/{state-code}",
 		HandlerFunc: HandleGetState},
+	Route{
+		Name:        "GetAllProducts",
+		Method:      "GET",
+		Pattern:     "/product",
+		HandlerFunc: HandleGetAllProduct},
+	Route{
+		Name:        "GetHybridProducts",
+		Method:      "GET",
+		Pattern:     "/product/hybrid",
+		HandlerFunc: HandleGetHybridProduct},
+	Route{
+		Name:        "GetSativaProducts",
+		Method:      "GET",
+		Pattern:     "/product/sativa",
+		HandlerFunc: HandleGetSativaProduct},
+	Route{
+		Name:        "GetIndicaProducts",
+		Method:      "GET",
+		Pattern:     "/product/indica",
+		HandlerFunc: HandleGetIndicaProduct},
 }
 
 type ConfiguredRoutes []Route

@@ -83,3 +83,10 @@ type GeoJson struct {
 	Type        string    `json:"-"`
 	Coordinates []float64 `json:"coordinates"`
 }
+
+type Product struct {
+	Description string   `bson:"description" json:"description"`
+	MedicalUse  []string `bson:"medicalUse" json:"medicalUse"`
+	ProductType string   `bson:"productType" json:"productType"`
+	Strain      string   `bson:"strain" json:"strain"`
+}

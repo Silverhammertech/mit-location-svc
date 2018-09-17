@@ -11,6 +11,10 @@
       "description": "For diagnostic purposes"
     },
     {
+      "name" : "product",
+      "description": "Products"
+    },
+    {
       "name" : "geolocation",
       "description": "For geolocation purposes"
     }
@@ -170,6 +174,90 @@
             "type": "number",
             "default": 100
           }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "404": {
+            "description": "Endpoint Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/product": {
+      "get": {
+        "tags" : [ "product" ],
+        "summary": "Gets all products.",
+        "description": "Gets all products.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "404": {
+            "description": "Endpoint Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/product/hybrid": {
+      "get": {
+        "tags" : [ "product" ],
+        "summary": "Gets hybrid products.",
+        "description": "Gets hybrid products.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "404": {
+            "description": "Endpoint Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/product/sativa": {
+      "get": {
+        "tags" : [ "product" ],
+        "summary": "Gets sativa products.",
+        "description": "Gets sativa products.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "404": {
+            "description": "Endpoint Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/product/indica": {
+      "get": {
+        "tags" : [ "product" ],
+        "summary": "Gets indica products.",
+        "description": "Gets indica products.",
+        "produces": [
+          "application/json"
         ],
         "responses": {
           "200": {
