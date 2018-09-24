@@ -90,3 +90,9 @@ type Product struct {
 	ProductType string   `bson:"productType" json:"productType"`
 	Strain      string   `bson:"strain" json:"strain"`
 }
+
+type OtherProduct struct {
+	Name        string `bson:"name" json:"name"`
+	Description string `bson:"description" json:"description"`
+	Seller      string `bson:"seller" json:"seller"`
+}

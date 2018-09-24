@@ -17,6 +17,10 @@
     {
       "name" : "geolocation",
       "description": "For geolocation purposes"
+    },
+    {
+      "name" : "otherproduct",
+      "description": "Other Products"
     }
   ],
   "basePath": "/api/v1",
@@ -256,6 +260,426 @@
         "tags" : [ "product" ],
         "summary": "Gets indica products.",
         "description": "Gets indica products.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "404": {
+            "description": "Endpoint Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/other-product": {
+      "get": {
+        "tags" : [ "otherproduct" ],
+        "summary": "Gets other products.",
+        "description": "Gets other products.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "404": {
+            "description": "Endpoint Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/other-product/edible": {
+      "get": {
+        "tags" : [ "otherproduct" ],
+        "summary": "Gets other products.",
+        "description": "Gets other products.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "404": {
+            "description": "Endpoint Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/other-product/edible/beverage": {
+      "get": {
+        "tags" : [ "otherproduct" ],
+        "summary": "Gets edible products.",
+        "description": "Gets edible products.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "404": {
+            "description": "Endpoint Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/other-product/edible/breakfast": {
+      "get": {
+        "tags" : [ "otherproduct" ],
+        "summary": "Gets edible products.",
+        "description": "Gets edible products.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "404": {
+            "description": "Endpoint Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/other-product/edible/brownie": {
+      "get": {
+        "tags" : [ "otherproduct" ],
+        "summary": "Gets edible products.",
+        "description": "Gets edible products.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "404": {
+            "description": "Endpoint Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/other-product/edible/candy": {
+      "get": {
+        "tags" : [ "otherproduct" ],
+        "summary": "Gets edible products.",
+        "description": "Gets edible products.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "404": {
+            "description": "Endpoint Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/other-product/edible/capsule": {
+      "get": {
+        "tags" : [ "otherproduct" ],
+        "summary": "Gets edible products.",
+        "description": "Gets edible products.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "404": {
+            "description": "Endpoint Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/other-product/edible/chocolate": {
+      "get": {
+        "tags" : [ "otherproduct" ],
+        "summary": "Gets edible products.",
+        "description": "Gets edible products.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "404": {
+            "description": "Endpoint Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/other-product/edible/condiment": {
+      "get": {
+        "tags" : [ "otherproduct" ],
+        "summary": "Gets edible products.",
+        "description": "Gets edible products.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "404": {
+            "description": "Endpoint Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/other-product/edible/cookie": {
+      "get": {
+        "tags" : [ "otherproduct" ],
+        "summary": "Gets edible products.",
+        "description": "Gets edible products.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "404": {
+            "description": "Endpoint Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/other-product/edible/cooking": {
+      "get": {
+        "tags" : [ "otherproduct" ],
+        "summary": "Gets edible products.",
+        "description": "Gets edible products.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "404": {
+            "description": "Endpoint Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/other-product/edible/frozen": {
+      "get": {
+        "tags" : [ "otherproduct" ],
+        "summary": "Gets edible products.",
+        "description": "Gets edible products.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "404": {
+            "description": "Endpoint Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/other-product/edible/snack": {
+      "get": {
+        "tags" : [ "otherproduct" ],
+        "summary": "Gets edible products.",
+        "description": "Gets edible products.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "404": {
+            "description": "Endpoint Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/other-product/edible/tincture": {
+      "get": {
+        "tags" : [ "otherproduct" ],
+        "summary": "Gets edible products.",
+        "description": "Gets edible products.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "404": {
+            "description": "Endpoint Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/other-product/concentrate": {
+      "get": {
+        "tags" : [ "otherproduct" ],
+        "summary": "Gets concentrate products.",
+        "description": "Gets concentrate products.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "404": {
+            "description": "Endpoint Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/other-product/concentrate/cartridge": {
+      "get": {
+        "tags" : [ "otherproduct" ],
+        "summary": "Gets concentrate products.",
+        "description": "Gets concentrate products.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "404": {
+            "description": "Endpoint Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/other-product/concentrate/ingestible": {
+      "get": {
+        "tags" : [ "otherproduct" ],
+        "summary": "Gets concentrate products.",
+        "description": "Gets concentrate products.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "404": {
+            "description": "Endpoint Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/other-product/concentrate/solvent": {
+      "get": {
+        "tags" : [ "otherproduct" ],
+        "summary": "Gets concentrate products.",
+        "description": "Gets concentrate products.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "404": {
+            "description": "Endpoint Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/other-product/concentrate/solventless": {
+      "get": {
+        "tags" : [ "otherproduct" ],
+        "summary": "Gets concentrate products.",
+        "description": "Gets concentrate products.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "404": {
+            "description": "Endpoint Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/other-product/concentrate/terpene": {
+      "get": {
+        "tags" : [ "otherproduct" ],
+        "summary": "Gets concentrate products.",
+        "description": "Gets concentrate products.",
         "produces": [
           "application/json"
         ],
